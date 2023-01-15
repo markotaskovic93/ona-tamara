@@ -1,0 +1,48 @@
+.ant-layout-content {
+  @apply h-screen;
+  @apply bg-backgroundColorMain;
+  @apply flex;
+  @apply justify-center;
+  @apply items-center;
+  
+  .slider-landscape {
+    width: 85%;
+    height: 80vh;
+    @apply overflow-hidden;
+    @apply relative;
+
+    .slider-container {
+      @apply w-full;
+      height: inherit;
+      @apply absolute;
+      @apply top-0;
+      @apply left-0;
+
+      .slider-item {
+        height: inherit;
+      }
+    }
+  }
+  
+  .slider-portrait {
+    width: 90%;
+    height: 90vh;
+    @apply overflow-hidden;
+    @apply relative;
+
+    .slider-container {
+      @apply w-full;
+      height: inherit;
+      @apply absolute;
+      @apply top-0;
+      @apply left-0;
+
+      .slider-item {
+        height: inherit;
+      }
+    }
+  }
+}
+
+
+

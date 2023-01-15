@@ -1,64 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      screens: {
+        xs: '480px',
+        ss: '620px',
+        sm: '768px',
+        md: '1060px',
+        lg: '1200px',
+        xl: '1700px',
+        xxl: '1900px'
+      },
       colors: {
-        'green': "green"
-      },
-      fontSize: {
-        large:   '2rem',
-        xxl:     '2.5rem',
-        normal:  '1rem'
-      },
-      textColor: {
-        primary:    '#E36A2E',
-        secondary:  '#005c95',
+        backgroundColorMain: '#1C252C'
       },
       fontFamily: {
-        effra:    ['Effra', 'Arial', 'sans-serif'],
-        display:  ['Gilroy', 'sans-serif'],
-        body:     ['Graphik', 'sans-serif']
-      },
-      margin: {
-        xxs:   '.5rem',
-        xxxs:  '.3125rem',
-        xs:    '.75rem',
-        sm:    '1rem',
-        xl:    '9rem',
-      },
-      padding: {
-        10.8:   '2.7em',
-        '2px':  '2px',
-      },
-      borderRadius: {
-        'xl':   '0.75rem',
-        '2xl':  '1rem',
-        '3xl':  '1.5rem',
-      },
-      zIndex: {
-        1:  1,
-        2:  2,
-        3:  3,
-      },
-      opacity: {
-        '10':  '0.1',
-        '20':  '0.2',
-        '30':  '0.3',
-      },
-      letterSpacing: {
-        tightest:  '-.075em',
-        tighter:   '-.05em',
-        tight:     '-.025em',
-        normal:    '0',
-        wide:      '.025em',
-        wider:     '.05em',
-        widest:    '.1em',
-      },
-      colors: {
-        blue:   'blue'
+        poppins: ['Poppins', 'sans-serif']
       }
-    },
+    }
   },
-  plugins: [],
-}
+  plugins: []
+};
