@@ -6,7 +6,7 @@ const { Content } = Layout;
 function MainLayout({ children }) {
   return (
     <Layout>
-      <Content className='min-h-[75vh]'>{ children }</Content>
+      <Content className='min-h-[100vh]'>{ children }</Content>
     </Layout>
   );
 }

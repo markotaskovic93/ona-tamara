@@ -1,44 +1,58 @@
 .ant-layout-content {
-  @apply h-screen;
   @apply bg-backgroundColorMain;
-  @apply flex;
   @apply justify-center;
   @apply items-center;
-  
-  .slider-landscape {
-    width: 85%;
-    height: 80vh;
-    @apply overflow-hidden;
-    @apply relative;
 
-    .slider-container {
-      @apply w-full;
-      height: inherit;
-      @apply absolute;
-      @apply top-0;
-      @apply left-0;
+  .intro-layout {
+    @apply flex;
 
-      .slider-item {
-        height: inherit;
+    .email-section {
+      width: 10%;
+      @apply flex;
+      @apply justify-center;
+      @apply items-center;
+      
+      .email {
+        transform: rotate(-90deg);
+        @apply text-white_300;
+        @apply text-24;
+        @apply font-montserrat;
       }
     }
-  }
-  
-  .slider-portrait {
-    width: 90%;
-    height: 90vh;
-    @apply overflow-hidden;
-    @apply relative;
 
-    .slider-container {
-      @apply w-full;
-      height: inherit;
-      @apply absolute;
-      @apply top-0;
-      @apply left-0;
+    .intro-section {
+      width: 80%;
+      @apply flex;
+      @apply flex-col;
+      @apply justify-center;
+      @apply items-center;
+      @apply text-white_300;
 
-      .slider-item {
-        height: inherit;
+      .logo {
+        width: 488px;
+        height: 100px;
+      }
+
+      .text {
+        width: 900px;
+        @apply text-center;
+        margin-top: 100px;
+        @apply text-24;
+        @apply font-montserrat;
+      }
+    }
+
+    .tab-section {
+      width: 10%;
+      @apply flex;
+      @apply justify-center;
+      @apply items-center;
+
+      .tab-modal {
+        transform: rotate(-90deg);
+        @apply text-white_300;
+        @apply text-24;
+        @apply font-montserrat;
       }
     }
   }

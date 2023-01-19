@@ -13,11 +13,16 @@ module.exports = {
         xxl: '1900px'
       },
       colors: {
-        backgroundColorMain: '#1C252C'
+        backgroundColorMain: '#1C252C',
+        white_300: '#F2F2F2'
       },
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif']
-      }
+        poppins: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif']
+      },
+      fontSize: {
+        24: '1.5rem'
+      },
     }
   },
   plugins: []
